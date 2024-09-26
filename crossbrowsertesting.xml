@@ -1,0 +1,12 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <parameter name = "os" value = "window"/> 
+   <parameter name = "browser" value = "Chrome"/>
+  
+    <classes>
+      <class name="testbase.TC_001Regsistrationpage"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,25 @@
+
+<suite name="Mastersuite" thread-count="5">
+<listeners>
+<listener class-name="utilies.Extendreportmanager"/>
+</listeners>
+<groups>
+  <run>
+         <include name = "regression">
+
+</include>
+</run>
+</groups>
+
+  <test  name="Chrometest ">
+  
+  <parameter name = "os" value = "window"/> 
+   <parameter name = "browser" value = "Chrome"/>
+  
+    <classes>
+    <class name="testbase.TC_001Regsistrationpage"/>
+       <!-- <class name="testbase.TC_002Loginpage"/>-->
+     <!--  <class name="testbase.TC_003DDT"/>-->
+    </classes>
+  </test> <!-- Test -->
+  </suite> <!-- Suite -->

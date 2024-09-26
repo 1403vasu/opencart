@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Mastersuite]">
+  <listeners>
+    <listener class-name="utilies.Extendreportmanager"/>
+  </listeners>
+  <test thread-count="5" name="Chrometest (failed)">
+    <parameter name="os" value="window"/>
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testbase.TC_002Loginpage">
+        <methods>
+          <include name="setup"/>
+          <include name="Verify_login"/>
+        </methods>
+      </class> <!-- testbase.TC_002Loginpage -->
+    </classes>
+  </test> <!-- Chrometest (failed) -->
+</suite> <!-- Failed suite [Mastersuite] -->
